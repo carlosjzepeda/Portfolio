@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pky3bmt.css">
+  <title>Carlos Zepeda</title>
+</head>
+
+<body data-barba="wrapper">
+  <div class="cursor"></div>
+  <div class="follower"></div>
+  <nav>
+    <ul>
+      <a href="/public/home.html">
+        <li>Home</li>
+      </a>
+      <a href="/public/about.html">
+        <li>About</li>
+      </a>
+      <a href="/public/projects.html">
+        <li>Projects</li>
+      </a>
+      <a href="/public/contact.html">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="transition"></div>
+  <div class="background">
+    <h2>loading...</h1>
+  </div>
+  <main data-barba="container" data-barba-namespace="contact">
+    <div class="container contact">
+      <h5 class="page-title">Contact</h5>
+      <div class="grid">
+        <div>
+          <p>Hey there, if you're trying to get in contact with me go ahead and fill out the form to the right. Whether
+            it's about work, collaborations or something else that's on your mind, go ahead and shoot me a messsage and I'll respond ASAP. If you prefer not to fill out the form that's okay. Just send me an email at:
+            <a href="mailto:cjzepedaa@gmail.com"><strong>CJZEPEDAA@GMAIL.COM</strong></p></a>
+        </div>
+        <form class="form img" action="https://formspree.io/f/mpzkpweo" method="POST">
+          <input class="form-input" type="text" name="name" placeholder="Name" required>
+          <input class="form-input" type="text" name="subject" placeholder="Subject" required>
+          <input class="form-input" type="text" name="email" placeholder="Email" required>
+          <textarea class="form-input" name="Message" placeholder="Message"></textarea>
+          <div class="button-container">
+            <input class="button" type="submit" value="SEND">
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js "></script>
+  <script src="/public/app.js"></script>
+</body>
+
+</html>

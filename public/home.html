@@ -11,39 +11,59 @@
 </head>
 
 <body data-barba="wrapper">
-</header>
   <div class="cursor"></div>
   <div class="follower"></div>
+  <nav>
+    <ul>
+      <a href="/public/home.html">
+        <li>Home</li>
+      </a>
+      <a href="/public/about.html">
+        <li>About</li>
+      </a>
+      <a href="/public/projects.html">
+        <li>Projects</li>
+      </a>
+      <a href="/public/contact.html">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="transition"></div>
+  <div class="background">
+    <h2>loading...</h1>
+  </div>
   <main data-barba="container" data-barba-namespace="home">
-    <div class="menu">
+    <div class="container">
       <h1 class="intro">Hi.</h1>
     </div>
-    <div class="menu" id="about">
+    <div class="container" id="about">
       <a href="/public/about.html">
         <h2 class="title">About</h2>
       </a>
-      <div class="preview">
-        <img class="img" src="/public/images/pexels-ali-pazani-5683340.jpg" alt="about">
-      </div>
+      <a href="/public/about.html"><img class="img" src="/public/images/notebook.jpg" alt="about"></a>
     </div>
-    <div class="menu">
+    <div class="container">
       <a href="/public/projects.html">
         <h2 class="title">Projects</h2>
       </a>
-      <div class="preview">
-        <img class="img" src="/public/images/pexels-ali-pazani-5683340.jpg" alt="">
-      </div>
+      <a href="/public/projects.html"><img class="img" src="/public/images/loquedicen.jpg" alt=""></a>
     </div>
-    <div class="menu">
+    <div class="container" id="contact">
       <a href="/public/contact.html">
         <h2 class="title">Contact</h2>
       </a>
-      <div class="preview">
-        <img class="img" src="/public/images/pexels-ali-pazani-5683340.jpg" alt="">
-      </div>
+      <form class="form img" action="https://formspree.io/f/mpzkpweo" method="POST">
+        <input class="form-input" type="text" name="name" placeholder="Name" required>
+        <input class="form-input" type="text" name="subject" placeholder="Subject" required>
+        <input class="form-input" type="text" name="email" placeholder="Email" required>
+        <textarea class="form-input" name="Message" placeholder="Message"></textarea>
+        <div class="button-container">
+          <input class="button" type="submit" value="SEND">
+        </div>
+      </form>
     </div>
   </main>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
