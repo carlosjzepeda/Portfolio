@@ -172,10 +172,11 @@ h5 {
   align-items: center;
 }
 
-.grid-img{
+.grid-img {
   height: 400px;
 }
-.grid-img:hover{
+
+.grid-img:hover {
   filter: invert();
 }
 
@@ -200,7 +201,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height:25x;
+  height: 25x;
   width: 50px;
   position: relative;
   background-color: rgb(5, 5, 5);
@@ -219,8 +220,10 @@ h5 {
   display: flex;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /*FORM*/
@@ -303,4 +306,60 @@ h5 {
   color: inherit;
   font-weight: bold;
   text-shadow: 47px 41px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Mobile Friendly Code */
+
+@media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    cursor: none;
+}
+
+  .cursor {
+    display: none;
+  }
+
+  .follower {
+    display: none;
+  }
+
+  a {
+    display: flex;
+    text-decoration: none !important;
+    color: inherit;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+
+  .img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .container{
+    display: grid;
+  }
+
+
+
 }

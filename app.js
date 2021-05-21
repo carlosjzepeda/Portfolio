@@ -1,12 +1,11 @@
 history.replaceState(null, null, " ");
-
 //BARBA ANIMATIONS
 
 //PAGE SLIDE
 function pageTransition() {
   let tl = gsap.timeline();
   tl.to(".transition", {
-    translateX: "100%",
+    translateX: "105%",
     duration: 1,
     visibility: "visible",
     opacity: 1,
@@ -16,7 +15,7 @@ function pageTransition() {
 function pageTransitionEnter() {
   let tl = gsap.timeline();
   tl.to(".transition", {
-    translateX: "-100%",
+    translateX: "-105%",
     duration: 1,
     opacity: 1,
     ease: "expo.out",
